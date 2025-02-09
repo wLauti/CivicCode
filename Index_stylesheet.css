@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'NormalFont';
+    src: url('../../Assets/Fuentes/NormalFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LogoFont';
+    src: url('../../Assets/Fuentes/LogoFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: "NormalFont", sans-serif;
+    margin: 0px;
+}
+
+main {
+    margin-top: 70px;
+}
+
+header {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.329);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+header a {
+    color: white;
+}
+
+header img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header .subpaginas {
+    display: flex;
+    text-align: center;
+}
+
+header .subpagina {
+    margin-right: 20px;
+}
+
+header .titulo {
+    font-family: "LogoFont", sans-serif;
+    margin-right: 20em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#video-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: opacity 0.1s linear;
+}
+
+.logotitulo {
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 0px 0px 6px white;
+    font-family: "LogoFont", sans-serif;
+}
+
+@media screen and (max-width: 1920px) {
+    main {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+main p {
+    text-align: left;
+    padding: 15px;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 20px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: black;
+}
+
+footer strong {
+    font-family: "LogoFont", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: large;
+}
