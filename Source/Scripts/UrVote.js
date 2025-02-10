@@ -1,17 +1,7 @@
-function descargarArchivo1() {
-    const enlace = document.createElement("a");
-    enlace.href = "../../Assets/Downloads/UrVote_Setup.exe";
-    enlace.download = "UrVote_Setup.exe";
-    document.body.appendChild(enlace);
-    enlace.click();
-    document.body.removeChild(enlace);
+function descargar1() {
+    document.location.href="https://drive.google.com/file/d/1VHbYjWfruXoh5pBd9mgFo0fJrQfHjkLi/view?usp=drive_link"
 }
 
-function descargarArchivo2() {
-    const enlace = document.createElement("a");
-    enlace.href = "../../Assets/Downloads/UrVote.zip";
-    enlace.download = "UrVote.zip";
-    document.body.appendChild(enlace);
-    enlace.click();
-    document.body.removeChild(enlace);
+function descargar2() {
+    document.location.href="https://drive.google.com/file/d/1qbJ0UBi2XBwyUmvgPKVoCjiiYUgzlJsy/view?usp=drive_link"
 }
